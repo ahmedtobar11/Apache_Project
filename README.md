@@ -52,32 +52,8 @@ This Ansible project automates Apache (httpd) web server configuration with mult
 * Root/sudo access
 
 ### Required Ansible Collections
-```bash
+```
 ansible-galaxy collection install community.general
-```
-
-## Installation
-
-
-## Project Structure
-
-```
-.
-├── README.md
-├── inventory/
-│   └── hosts
-├── group_vars/
-│   └── all.yml
-├── roles/
-│   └── apache_logging/
-│       ├── tasks/
-│       │   └── main.yml
-│       ├── templates/
-│       │   ├── virtualhost.conf.j2
-│       │   └── logrotate.conf.j2
-│       └── handlers/
-│           └── main.yml
-└── site.yml
 ```
 
 ## Configuration
@@ -112,7 +88,7 @@ virtualhosts:
 ## Usage
 
 ### Basic Deployment
-```bash
+```
 # Deploy with default settings
 ansible-playbook -i inventory/hosts site.yml
 ```
